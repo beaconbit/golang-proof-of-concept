@@ -1,0 +1,79 @@
+package scanner
+
+import (
+    "time"
+    "graphite/publisher/db"
+)
+
+// Device describes a device found on the network
+type Device struct {
+    IP       string
+    Username string
+    Password string
+}
+
+// Scanner handles network scanning
+type Scanner struct {
+    discoveredDevices map[string]Device
+    executor	      *db.DBExecutor
+    scanTicker        *time.Ticker
+    updates           chan DeviceUpdate
+    results           chan []Device
+}
+
+// DeviceUpdate lets the manager inform the scanner about new info
+type DeviceUpdate struct {
+    IP       string
+    Password string
+}
+
+func NewScanner(updateCh chan DeviceUpdate, resultCh chan []Device, dbExecutor *db.DBExecutor) *Scanner {
+    logger := logPrefix("NewScanner")
+    logger.Println("NewScanner")
+    return &Scanner{
+        discoveredDevices: make(map[string]Device),
+	executor:	   dbExecutor,
+        scanTicker:        time.NewTicker(10 * time.Second),
+        updates:           updateCh,
+        results:           resultCh,
+    }
+}
+
+func (s *Scanner) Start() {
+    go func() {
+        for {
+            select {
+            case <-s.scanTicker.C:
+                s.scanNetwork()
+            case update := <-s.updates:
+                s.handleUpdate(update)
+            }
+        }
+    }()
+}
+
+func (s *Scanner) scanNetwork() {
+    logger := logPrefix("scanNetwork")
+    logger.Println("scanNetwork")
+    // dummy discovery
+    device := Device{IP: "192.168.1.100", Username: "root", Password: ""}
+    s.discoveredDevices[device.IP] = device
+
+    // send results
+    var all []Device
+    for _, d := range s.discoveredDevices {
+        all = append(all, d)
+    }
+    s.results <- all
+}
+
+func (s *Scanner) handleUpdate(update DeviceUpdate) {
+    logger := logPrefix("handleUpdate")
+    logger.Println("handleUpdate")
+    if device, ok := s.discoveredDevices[update.IP]; ok {
+        device.Password = update.Password
+        s.discoveredDevices[update.IP] = device
+        logger.Printf("Updated password for %s\n", update.IP)
+    }
+}
+

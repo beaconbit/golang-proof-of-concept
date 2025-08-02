@@ -1,0 +1,21 @@
+scan_interval: 10
+login_timeout: 5
+cookie_ttl_seconds: 3600
+max_device_failures: 5
+device_check_interval: 15
+invalid_check_every_n_cycles: 50
+
+credentials:
+  - username: root
+    password: ubuntu
+  - username: root
+    password: 10011230
+
+process:
+  mode: debug
+  interface: eno1
+  db_type: sqlite
+  db_driver: sqlite3
+  db_migration_url: file://db/migrations
+  db_path: db/app.db
+

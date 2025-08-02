@@ -1,0 +1,1272 @@
+main:main 2025/08/02 16:09:51 main.go:32: starting app
+main:main 2025/08/02 16:09:51 main.go:35: Running migrations...
+db:RunMigrations 2025/08/02 16:09:51 migrate.go:15: starting migrations
+main:main 2025/08/02 16:09:51 main.go:38: Connecting to database...
+db:NewSession 2025/08/02 16:09:51 session.go:11: Creating new sqlite session
+main:run 2025/08/02 16:09:51 main.go:50: beginning run loop
+supervisor:Supervise 2025/08/02 16:09:51 supervisor.go:71: queued worker for start:  0  nextID:  1
+main:run 2025/08/02 16:09:51 main.go:72: running ...
+supervisor:Run 2025/08/02 16:09:52 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:52 supervisor.go:100: checking workers
+supervisor:handleRestarts 2025/08/02 16:09:52 supervisor.go:158: calling restart worker sequence. worker 0. restarts so far 0
+supervisor:getBackoffDelay 2025/08/02 16:09:52 supervisor.go:208: returning delay of  2s
+supervisor:restartWorker 2025/08/02 16:09:52 supervisor.go:180: supervisor added and will start worker:  0
+scanner:Start 2025/08/02 16:09:52 scanner.go:58: Scanner started
+scanner:Start 2025/08/02 16:09:52 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:09:52 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:09:53 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:53 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:53 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:09:53 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:09:54 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:54 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:54 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:09:55 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:55 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:55 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:09:56 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:56 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:56 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:09:56 scanner.go:83: heartbeat and work loop
+supervisor:checkWorkers 2025/08/02 16:09:56 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:09:56 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:09:57 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:57 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:57 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:09:57 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:09:58 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:58 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:58 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:09:59 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:09:59 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:09:59 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:00 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:00 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:00 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:01 supervisor.go:91: tick
+scanner:Start 2025/08/02 16:10:01 scanner.go:83: heartbeat and work loop
+supervisor:checkWorkers 2025/08/02 16:10:01 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:01 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:01 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:10:01 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:02 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:02 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:02 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:03 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:03 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:03 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:04 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:04 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:04 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:05 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:05 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:05 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:06 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:06 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:06 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:06 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:10:06 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:06 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:10:07 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:07 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:07 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:07 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:08 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:08 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:08 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:09 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:09 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:09 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:10 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:10 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:10 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:11 supervisor.go:91: tick
+scanner:Start 2025/08/02 16:10:11 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:11 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:10:11 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:11 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:11 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:12 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:12 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:12 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:13 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:13 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:13 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:14 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:14 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:14 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:15 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:15 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:15 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:16 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:16 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:16 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:16 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:16 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:16 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:17 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:17 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:17 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:18 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:18 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:18 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:19 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:19 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:19 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:20 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:20 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:20 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:21 supervisor.go:91: tick
+scanner:Start 2025/08/02 16:10:21 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:21 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:10:21 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:21 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:21 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:22 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:22 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:22 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:23 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:23 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:23 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:24 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:24 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:24 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:25 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:25 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:25 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:26 supervisor.go:91: tick
+scanner:Start 2025/08/02 16:10:26 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:26 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:10:26 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:26 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:26 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:27 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:27 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:27 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:28 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:28 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:28 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:29 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:29 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:29 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:30 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:30 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:30 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:31 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:31 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:31 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:31 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:31 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:32 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:32 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:32 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:32 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:33 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:33 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:33 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:34 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:34 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:34 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:35 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:35 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:35 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:36 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:36 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:36 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:36 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:36 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:36 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:37 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:37 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:37 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:38 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:38 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:38 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:39 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:39 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:39 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:40 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:40 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:40 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:41 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:41 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:41 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:41 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:41 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:42 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:42 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:42 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:42 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:43 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:43 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:43 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:44 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:44 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:44 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:45 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:45 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:45 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:46 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:46 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:46 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:46 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:46 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:46 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:47 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:47 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:47 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:48 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:48 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:48 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:49 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:49 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:49 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:50 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:50 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:50 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:51 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:51 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:51 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:51 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:51 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:52 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:52 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:52 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:52 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:53 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:53 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:53 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:54 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:54 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:54 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:55 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:55 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:55 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:10:56 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:10:56 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:10:56 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:56 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:56 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:10:56 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:10:57 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:57 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:57 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:58 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:58 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:58 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:10:59 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:10:59 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:10:59 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:00 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:00 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:00 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:01 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:01 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:01 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:01 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:01 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:02 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:02 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:02 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:02 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:03 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:03 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:03 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:04 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:04 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:04 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:05 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:05 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:05 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:06 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:06 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:06 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:06 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:06 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:07 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:07 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:07 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:07 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:08 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:08 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:08 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:09 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:09 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:09 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:10 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:10 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:10 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:11 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:11 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:11 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:11 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:11 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:11 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:12 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:12 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:12 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:13 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:13 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:13 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:14 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:14 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:14 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:15 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:15 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:15 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:16 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:16 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:16 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:16 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:16 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:17 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:17 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:17 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:17 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:18 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:18 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:18 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:19 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:19 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:19 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:20 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:20 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:20 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:21 supervisor.go:91: tick
+scanner:Start 2025/08/02 16:11:21 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:21 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:11:21 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:21 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:21 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:22 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:22 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:22 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:23 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:23 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:23 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:24 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:24 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:24 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:25 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:25 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:25 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:26 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:26 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:26 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:26 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:11:26 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:26 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:11:27 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:27 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:27 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:27 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:28 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:28 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:28 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:29 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:29 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:29 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:30 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:30 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:30 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:31 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:31 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:31 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:31 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:31 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:31 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:32 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:32 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:32 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:33 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:33 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:33 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:34 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:34 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:34 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:35 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:35 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:35 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:36 supervisor.go:91: tick
+scanner:Start 2025/08/02 16:11:36 scanner.go:83: heartbeat and work loop
+supervisor:checkWorkers 2025/08/02 16:11:36 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:36 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:36 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:11:36 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:37 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:37 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:37 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:38 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:38 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:38 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:39 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:39 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:39 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:40 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:40 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:40 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:41 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:41 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:41 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:41 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:41 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:42 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:42 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:42 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:42 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:43 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:43 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:43 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:44 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:44 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:44 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:45 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:45 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:45 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:46 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:46 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:46 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:46 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:46 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:11:47 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:47 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:47 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:47 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:48 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:48 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:48 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:49 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:49 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:49 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:50 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:50 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:50 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:51 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:51 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:51 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:11:51 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:51 scanner.go:86: sending heartbeat
+scanner:scanNetwork 2025/08/02 16:11:51 scanner.go:110: scanNetwork
+supervisor:Run 2025/08/02 16:11:52 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:52 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:52 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:52 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:11:52 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:52 scanner.go:88: skip sending heartbeat, last one not read
+scanner:Start 2025/08/02 16:11:52 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:52 scanner.go:88: skip sending heartbeat, last one not read
+scanner:handleUpdate 2025/08/02 16:11:52 scanner.go:129: handleUpdate
+scanner:handleUpdate 2025/08/02 16:11:52 scanner.go:137: bulk upsert succeeded
+supervisor:Run 2025/08/02 16:11:53 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:53 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:53 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:53 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:54 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:54 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:54 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:55 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:55 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:55 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:56 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:56 supervisor.go:100: checking workers
+scanner:Start 2025/08/02 16:11:56 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:11:56 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:11:56 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:11:56 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:11:57 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:57 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:57 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:58 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:58 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:58 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:11:59 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:11:59 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:11:59 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:00 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:00 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:00 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:01 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:01 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:01 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:01 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:01 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:02 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:02 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:02 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:02 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:03 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:03 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:03 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:04 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:04 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:04 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:05 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:05 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:05 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:06 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:06 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:06 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:06 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:06 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:07 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:07 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:07 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:07 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:08 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:08 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:08 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:09 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:09 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:09 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:10 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:10 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:10 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:11 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:11 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:11 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:11 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:11 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:12 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:12 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:12 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:12 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:13 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:13 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:13 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:14 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:14 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:14 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:15 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:15 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:15 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:16 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:16 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:16 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:16 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:16 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:17 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:17 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:17 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:17 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:18 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:18 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:18 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:19 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:19 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:19 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:20 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:20 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:20 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:21 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:21 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:21 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:21 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:21 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:21 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:22 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:22 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:22 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:23 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:23 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:23 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:24 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:24 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:24 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:25 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:25 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:25 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:26 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:26 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:26 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:26 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:26 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:27 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:27 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:27 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:27 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:28 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:28 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:28 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:29 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:29 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:29 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:30 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:30 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:30 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:31 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:31 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:31 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:31 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:31 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:32 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:32 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:32 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:32 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:33 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:33 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:33 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:34 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:34 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:34 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:35 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:35 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:35 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:36 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:36 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:36 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:36 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:36 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:37 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:37 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:37 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:37 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:38 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:38 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:38 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:39 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:39 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:39 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:40 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:40 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:40 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:41 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:41 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:41 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:41 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:41 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:41 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:42 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:42 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:42 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:43 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:43 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:43 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:44 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:44 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:44 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:45 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:45 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:45 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:46 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:46 supervisor.go:100: checking workers
+scanner:Start 2025/08/02 16:12:46 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:46 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:12:46 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:46 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:47 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:47 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:47 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:48 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:48 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:48 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:49 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:49 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:49 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:50 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:50 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:50 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:51 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:51 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:51 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:51 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:12:51 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:51 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:12:52 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:52 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:52 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:52 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:53 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:53 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:53 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:54 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:54 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:54 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:55 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:55 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:55 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:12:56 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:12:56 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:12:56 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:56 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:56 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:12:56 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:12:57 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:57 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:57 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:58 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:58 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:58 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:12:59 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:12:59 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:12:59 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:00 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:00 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:00 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:01 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:01 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:01 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:01 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:13:01 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:01 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:13:02 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:02 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:02 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:02 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:03 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:03 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:03 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:04 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:04 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:04 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:05 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:05 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:05 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:06 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:06 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:06 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:06 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:06 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:06 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:07 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:07 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:07 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:08 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:08 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:08 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:09 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:09 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:09 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:10 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:10 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:10 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:11 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:11 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:11 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:11 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:11 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:11 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:12 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:12 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:12 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:13 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:13 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:13 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:14 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:14 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:14 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:15 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:15 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:15 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:16 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:16 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:16 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:16 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:16 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:16 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:17 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:17 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:17 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:18 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:18 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:18 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:19 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:19 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:19 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:20 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:20 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:20 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:21 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:21 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:21 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:21 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:21 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:21 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:22 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:22 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:22 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:23 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:23 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:23 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:24 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:24 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:24 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:25 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:25 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:25 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:26 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:26 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:26 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:26 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:26 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:27 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:27 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:27 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:27 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:28 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:28 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:28 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:29 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:29 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:29 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:30 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:30 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:30 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:31 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:31 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:31 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:31 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:31 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:32 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:32 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:32 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:32 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:33 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:33 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:33 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:34 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:34 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:34 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:35 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:35 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:35 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:36 scanner.go:83: heartbeat and work loop
+supervisor:Run 2025/08/02 16:13:36 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:36 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:36 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:36 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:13:36 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:37 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:37 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:37 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:38 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:38 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:38 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:39 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:39 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:39 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:40 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:40 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:40 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:41 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:41 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:41 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:41 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:41 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:42 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:42 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:42 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:42 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:43 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:43 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:43 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:44 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:44 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:44 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:45 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:45 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:45 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:46 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:46 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:46 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:46 supervisor.go:126: heartbeat detected
+scanner:Start 2025/08/02 16:13:46 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:46 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:13:47 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:47 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:47 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:47 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:48 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:48 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:48 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:49 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:49 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:49 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:50 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:50 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:50 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:51 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:51 scanner.go:86: sending heartbeat
+supervisor:Run 2025/08/02 16:13:51 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:51 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:51 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:51 supervisor.go:126: heartbeat detected
+scanner:scanNetwork 2025/08/02 16:13:51 scanner.go:110: scanNetwork
+scanner:Start 2025/08/02 16:13:51 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:51 scanner.go:88: skip sending heartbeat, last one not read
+scanner:Start 2025/08/02 16:13:51 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:51 scanner.go:88: skip sending heartbeat, last one not read
+scanner:handleUpdate 2025/08/02 16:13:51 scanner.go:129: handleUpdate
+scanner:handleUpdate 2025/08/02 16:13:51 scanner.go:137: bulk upsert succeeded
+supervisor:Run 2025/08/02 16:13:52 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:52 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:52 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:52 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:53 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:53 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:53 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:54 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:54 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:54 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:55 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:55 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:55 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:56 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:56 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:56 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:13:56 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:13:56 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:13:57 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:57 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:57 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:13:57 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:13:58 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:58 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:58 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:13:59 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:13:59 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:13:59 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:00 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:00 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:00 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:01 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:01 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:01 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:01 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:01 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:01 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:02 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:02 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:02 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:03 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:03 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:03 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:04 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:04 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:04 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:05 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:05 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:05 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:06 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:06 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:06 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:06 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:06 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:06 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:07 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:07 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:07 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:08 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:08 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:08 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:09 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:09 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:09 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:10 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:10 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:10 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:11 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:11 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:11 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:11 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:11 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:11 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:12 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:12 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:12 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:13 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:13 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:13 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:14 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:14 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:14 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:15 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:15 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:15 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:16 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:16 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:16 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:16 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:16 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:17 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:17 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:17 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:17 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:18 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:18 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:18 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:19 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:19 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:19 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:20 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:20 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:20 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:21 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:21 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:21 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:21 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:21 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:21 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:22 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:22 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:22 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:23 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:23 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:23 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:24 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:24 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:24 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:25 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:25 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:25 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:26 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:26 supervisor.go:100: checking workers
+scanner:Start 2025/08/02 16:14:26 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:26 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:14:26 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:26 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:27 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:27 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:27 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:28 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:28 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:28 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:29 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:29 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:29 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:30 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:30 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:30 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:31 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:31 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:31 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:31 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:31 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:32 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:32 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:32 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:32 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:33 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:33 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:33 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:34 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:34 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:34 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:35 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:35 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:35 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:36 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:36 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:36 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:36 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:36 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:36 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:37 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:37 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:37 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:38 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:38 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:38 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:39 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:39 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:39 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:40 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:40 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:40 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:41 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:41 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:41 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:41 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:41 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:41 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:42 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:42 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:42 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:43 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:43 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:43 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:44 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:44 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:44 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:45 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:45 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:45 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:46 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:46 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:46 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:46 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:46 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:47 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:47 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:47 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:47 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:48 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:48 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:48 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:49 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:49 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:49 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:50 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:50 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:50 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:51 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:51 supervisor.go:100: checking workers
+scanner:Start 2025/08/02 16:14:51 scanner.go:83: heartbeat and work loop
+supervisor:checkWorkers 2025/08/02 16:14:51 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:51 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:checkWorkers 2025/08/02 16:14:51 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:52 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:52 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:52 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:53 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:53 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:53 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:54 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:54 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:54 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:55 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:55 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:55 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:56 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:56 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:56 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:14:56 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:14:56 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:14:57 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:57 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:57 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:14:57 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:14:58 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:58 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:58 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:14:59 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:14:59 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:14:59 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:00 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:00 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:00 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:01 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:01 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:01 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:01 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:01 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:01 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:02 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:02 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:02 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:03 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:03 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:03 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:04 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:04 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:04 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:05 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:05 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:05 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:06 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:06 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:06 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:06 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:06 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:06 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:07 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:07 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:07 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:08 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:08 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:08 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:09 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:09 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:09 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:10 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:10 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:10 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:11 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:11 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:11 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:11 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:11 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:11 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:12 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:12 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:12 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:13 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:13 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:13 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:14 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:14 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:14 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:15 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:15 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:15 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:16 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:16 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:16 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:16 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:16 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:16 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:17 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:17 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:17 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:18 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:18 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:18 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:19 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:19 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:19 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:20 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:20 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:20 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:21 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:21 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:21 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:21 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:21 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:21 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:22 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:22 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:22 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:23 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:23 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:23 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:24 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:24 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:24 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:25 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:25 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:25 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:26 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:26 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:26 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:26 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:26 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:26 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:27 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:27 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:27 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:28 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:28 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:28 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:29 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:29 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:29 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:30 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:30 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:30 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:31 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:31 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:31 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+scanner:Start 2025/08/02 16:15:31 scanner.go:83: heartbeat and work loop
+scanner:Start 2025/08/02 16:15:31 scanner.go:88: skip sending heartbeat, last one not read
+supervisor:Run 2025/08/02 16:15:32 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:32 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:32 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:checkWorkers 2025/08/02 16:15:32 supervisor.go:126: heartbeat detected
+supervisor:Run 2025/08/02 16:15:33 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:33 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:33 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:34 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:34 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:34 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
+supervisor:Run 2025/08/02 16:15:35 supervisor.go:91: tick
+supervisor:checkWorkers 2025/08/02 16:15:35 supervisor.go:100: checking workers
+supervisor:checkWorkers 2025/08/02 16:15:35 supervisor.go:105: Worker ID: 0, Pointer: 0xc000290070
