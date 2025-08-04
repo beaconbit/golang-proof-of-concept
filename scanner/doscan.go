@@ -4,9 +4,14 @@ import (
 	"fmt"
 	"log"
 	"net"
+        "sync"
         "reflect"
+        "math"
+        "strings"
+        "context"
+        "errors"
+        "time"
 	"net/netip"
-	"time"
         "strconv"
 
 	"github.com/mdlayher/arp"
@@ -33,96 +38,94 @@ func getLocalInterface(name string) (*net.Interface, *net.IPNet, error) {
     return nil, nil, fmt.Errorf("no IPv4 address found on interface %s", name)
 }
 
-func arpScan(interfaceName string) (map[string]string, error) {
+func arpScan(interfaceName string, response chan string) error {
     ifi, ipnet, err := getLocalInterface(interfaceName)
     if err != nil {
-        return nil, err
+        return err
     }
 
+    binaryIP := convertIPToByteSlices(ipnet.IP.To4())
+
+    // binaryMask := [][]byte{
+    //     {1, 1, 1, 1, 1, 1, 1, 1},
+    //     {1, 1, 1, 1, 1, 1, 1, 1},
+    //     {1, 1, 1, 1, 1, 1, 1, 1},
+    //     {0, 0, 0, 0, 0, 0, 0, 0},
+    // }
+
+    binaryMask := convertMaskToByteSlices(ipnet.Mask)
+
+    firstIP := subnetFirstAddress(binaryIP , binaryMask)
+
+    var wg sync.WaitGroup
+    validHosts := countValidHosts(binaryMask) 
+    currentIP := firstIP
+
+    for j := 0; j <= validHosts; j++ {
+        wg.Add(1)
+        go func(ip [][]byte) {
+            defer wg.Done()
+            err := checkHostAlive(convertByteSlicesToIP(ip), ifi, response)
+            if err != nil {
+            }
+        }(currentIP)
+        currentIP = nextAddress(currentIP)
+    }
+
+    wg.Wait()
+    close(response)
+    return nil
+}
+
+func checkHostAlive(ip string, ifi *net.Interface, response chan string) error {
     conn, err := arp.Dial(ifi)
     if err != nil {
-        return nil, err
+        return err
     }
     defer conn.Close()
-    log.Println(ipnet.IP)
-    log.Println(ipnet.Mask)
 
-    devices := make(map[string]string)
-
-    ip := ipnet.IP.To4()
-
-    convertToByteSlices(ipnet.IP.To4())
-    test := [][]byte{
-        {1, 1, 0, 0, 0, 0, 0, 0},
-        {1, 0, 1, 0, 1, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 1, 0, 1, 1},
-    }
-    convertByteSlicesToIP(test)
-
-
-    for i := 1; i <= 254; i++ {
-        ipAddr := net.IPv4(ip[0], ip[1], ip[2], byte(i))
-        if ipAddr.Equal(ip) {
-            continue // skip self
-        }
-
-        target, ok := netip.AddrFromSlice(ipAddr)
-        if !ok {
-            continue
-        }
-
-        // Send ARP request
-        if err := conn.Request(target); err != nil {
-            continue
-        }
-
-        // Set a short timeout
-        _ = conn.SetReadDeadline(time.Now().Add(300 * time.Millisecond))
-
-        // Read ARP response
-        pkt, _, err := conn.Read()
-        if err == nil {
-            devices[pkt.SenderHardwareAddr.String()] = pkt.SenderIP.String()
-        }
+    ipAddr, err := netip.ParseAddr(ip)
+    if err != nil {
+        return err
     }
 
-    return devices, nil
-}
-// 
-func bitsToInt(bits []byte) int {
-    var result int
-    for _, bit := range bits {
-        result = (result << 1) | int(bit)
+    hwAddr, err := resolveWithTimeout(conn, ipAddr, 15*time.Second)
+    if err != nil {
+        // no reply or error - host might be unreachable
+        return err
+    } else {
+        msg := hwAddr.String() + "_" + ip
+        response <- msg
     }
-    return result
+    return nil
 }
 
-func convertByteSlicesToIP(test [][]byte) {
-    log.Println(test)
-    var ipComponents []string
-    for _, subSlice := range test {
-        s := bitsToInt(subSlice)
-        ipComponents = append(ipComponents, strconv.Itoa(s))
+func resolveWithTimeout(conn *arp.Client, ip netip.Addr, timeout time.Duration) (net.HardwareAddr, error) {
+    ctx, cancel := context.WithTimeout(context.Background(), timeout)
+    defer cancel()
+
+    resultCh := make(chan struct {
+        hw  net.HardwareAddr
+        err error
+    }, 1)
+
+    go func() {
+        hw, err := conn.Resolve(ip)
+        resultCh <- struct {
+            hw  net.HardwareAddr
+            err error
+        }{hw, err}
+    }()
+
+    select {
+    case res := <-resultCh:
+        return res.hw, res.err
+    case <-ctx.Done():
+        return nil, errors.New("ARP resolution timed out")
     }
-    log.Println(ipComponents)
-
-    a := []byte{0, 1, 1, 0, 1, 0, 0, 0}
-    b := []byte{1, 1, 1, 1, 0, 0, 0, 0}
-    c := make([]byte, len(a))
-
-    for i := 0; i < len(a); i++ {
-        c[i] = a[i] ^ b[i]
-    }
-
 }
-
-func convertMask(mask net.IPMask) int {
-    ones, _ := mask.Size()
-    return ones
-}
-
-func convertToByteSlices(ip net.IP) {
+//  IP ->  [][]byte, [][]byte -> []int -> IP string
+func convertIPToByteSlices(ip net.IP) [][]byte {
     log.Println(ip)
     log.Println(reflect.TypeOf(ip))
     var result [][]byte
@@ -133,20 +136,132 @@ func convertToByteSlices(ip net.IP) {
         }
         result = append(result, bits)
     }
-    log.Println(result)
+    return result
 }
 
-func convertMaskToByteSlices(mask net.IPMask) {
+func bitsToInt(bits []byte) int {
+    var result int
+    for _, bit := range bits {
+        result = (result << 1) | int(bit)
+    }
+    return result
+}
+
+func convertByteSlicesToIP(binaryIP [][]byte) string {
+    var ipComponents []string
+    for _, subSlice := range binaryIP {
+        s := bitsToInt(subSlice)
+        ipComponents = append(ipComponents, strconv.Itoa(s))
+    }
+    ip := strings.Join(ipComponents, ".")
+    return ip
+}
+
+// Mask -> [][]byte, [][]byte -> 
+func convertMaskToByteSlices(mask net.IPMask) [][]byte {
+    var result [][]byte
+    for _, b := range mask {
+        var bits []byte
+        for i := 7; i >= 0; i-- {
+            bits = append(bits, (b>>i)&1)
+        }
+        result = append(result, bits)
+    }
+    return result
+}
+
+// Operations
+func subnetFirstAddress(ip [][]byte, mask [][]byte) [][]byte {
+    var a []byte
+    var b []byte
+    var subnet [][]byte
+    for i := 0; i < len(ip); i++ {
+        a = ip[i] 
+        b = mask[i]
+        c := make([]byte, len(a))
+        for k := 0; k < len(a); k++ {
+            //c[k] = a[k] ^ b[k]
+            c[k] = a[k] & b[k]
+        }
+        subnet = append(subnet, c)
+    }
+    return subnet
+}
+
+func subnetLastAddress(ip [][]byte, mask [][]byte) string {
+    var a []byte
+    var b []byte
+    var binaryLastIP [][]byte
+    var count int = 0
+    for i := 0; i < len(ip); i++ {
+        a = ip[i] 
+        b = mask[i]
+        c := make([]byte, len(a))
+        for k := 0; k < len(a); k++ {
+            //c[k] = a[k] ^ b[k]
+            if b[k] == 1 {
+                count++
+            }
+            inverse := b[k] ^ 1
+            c[k] = a[k] | inverse
+        }
+        binaryLastIP = append(binaryLastIP, c)
+    }
+    lastIP := convertByteSlicesToIP(binaryLastIP)
+    log.Println("mask /", count)
+    return lastIP
+}
+
+func countValidHosts(mask [][]byte) int {
+    hostBits := 0
+    for _, byteSlice := range mask {
+        for _, bit := range byteSlice {
+            if bit == 0 {
+                hostBits++
+            }
+        }
+    }
+    // Handle edge case: /32 subnet has 0 valid hosts
+    if hostBits == 0 {
+        return 0
+    }
+    // Total usable hosts = 2^hostBits - 2 (excluding network & broadcast)
+    total := int(math.Pow(2, float64(hostBits))) - 2
+    return total
+}
+
+func nextAddress(addr [][]byte) [][]byte {
+    // Copy input to avoid modifying original
+    newAddr := make([][]byte, len(addr))
+    for i := range addr {
+        newAddr[i] = append([]byte(nil), addr[i]...)
+    }
+    // Start from the least significant bit (last byte, last bit)
+    for i := len(newAddr) - 1; i >= 0; i-- {
+        for j := 7; j >= 0; j-- {
+            if newAddr[i][j] == 0 {
+                newAddr[i][j] = 1
+                // All bits after this stay the same
+                return newAddr
+            }
+            // Otherwise, carry over
+            newAddr[i][j] = 0
+        }
+    }
+    // If all bits were 1, we wrapped around; return all 0s again
+    return newAddr
 }
 
 func DoScan() {
     log.Printf("Do Scan")
-    devices, err := arpScan("eno1") // replace with your interface name
-    if err != nil {
-        log.Fatal(err)
-    }
-    for mac, ip := range devices {
-        log.Printf("IP: %s MAC: %s", ip, mac)
+    response := make(chan string)
+    go func() {
+        err := arpScan("eno1", response) // replace with your interface name
+        if err != nil {
+        }
+    }()
+    for r := range response {
+        log.Println(r)
     }
 }
 
