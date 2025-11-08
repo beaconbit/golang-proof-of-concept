@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
         "sync"
-        "reflect"
+//        "reflect"
         "math"
         "strings"
         "context"
@@ -15,6 +15,8 @@ import (
         "strconv"
 
 	"github.com/mdlayher/arp"
+
+	"graphite/publisher/db"
 )
 
 func getLocalInterface(name string) (*net.Interface, *net.IPNet, error) {
@@ -27,18 +29,19 @@ func getLocalInterface(name string) (*net.Interface, *net.IPNet, error) {
     if err != nil {
         return nil, nil, err
     }
-    log.Println(addrs)
+//    log.Println(addrs)
 
     for _, addr := range addrs {
         if ipnet, ok := addr.(*net.IPNet); ok && ipnet.IP.To4() != nil {
-            log.Println("ipnet ", ipnet)
+//            log.Println("ipnet ", ipnet)
             return ifi, ipnet, nil
         }
     }
     return nil, nil, fmt.Errorf("no IPv4 address found on interface %s", name)
 }
 
-func arpScan(interfaceName string, response chan string) error {
+func arpScan(interfaceName string, response chan db.Address) error {
+    log.Println("arp scan running ...")
     ifi, ipnet, err := getLocalInterface(interfaceName)
     if err != nil {
         return err
@@ -77,7 +80,7 @@ func arpScan(interfaceName string, response chan string) error {
     return nil
 }
 
-func checkHostAlive(ip string, ifi *net.Interface, response chan string) error {
+func checkHostAlive(ip string, ifi *net.Interface, response chan db.Address) error {
     conn, err := arp.Dial(ifi)
     if err != nil {
         return err
@@ -89,12 +92,13 @@ func checkHostAlive(ip string, ifi *net.Interface, response chan string) error {
         return err
     }
 
-    hwAddr, err := resolveWithTimeout(conn, ipAddr, 15*time.Second)
+    hwAddr, err := resolveWithTimeout(conn, ipAddr, 5*time.Second)
     if err != nil {
         // no reply or error - host might be unreachable
         return err
     } else {
-        msg := hwAddr.String() + "_" + ip
+	msg := db.Address{Mac: hwAddr.String(), IP: ip}
+	// log.Println("placing single address on response queue: ", msg)
         response <- msg
     }
     return nil
@@ -124,10 +128,8 @@ func resolveWithTimeout(conn *arp.Client, ip netip.Addr, timeout time.Duration) 
         return nil, errors.New("ARP resolution timed out")
     }
 }
-//  IP ->  [][]byte, [][]byte -> []int -> IP string
+
 func convertIPToByteSlices(ip net.IP) [][]byte {
-    log.Println(ip)
-    log.Println(reflect.TypeOf(ip))
     var result [][]byte
     for _, b := range ip {
         var bits []byte
@@ -157,7 +159,6 @@ func convertByteSlicesToIP(binaryIP [][]byte) string {
     return ip
 }
 
-// Mask -> [][]byte, [][]byte -> 
 func convertMaskToByteSlices(mask net.IPMask) [][]byte {
     var result [][]byte
     for _, b := range mask {
@@ -188,6 +189,7 @@ func subnetFirstAddress(ip [][]byte, mask [][]byte) [][]byte {
     return subnet
 }
 
+// Not currently used - could be removed but it's nice to have as a reference
 func subnetLastAddress(ip [][]byte, mask [][]byte) string {
     var a []byte
     var b []byte
@@ -208,7 +210,6 @@ func subnetLastAddress(ip [][]byte, mask [][]byte) string {
         binaryLastIP = append(binaryLastIP, c)
     }
     lastIP := convertByteSlicesToIP(binaryLastIP)
-    log.Println("mask /", count)
     return lastIP
 }
 
@@ -252,16 +253,8 @@ func nextAddress(addr [][]byte) [][]byte {
     return newAddr
 }
 
-func DoScan() {
-    log.Printf("Do Scan")
-    response := make(chan string)
-    go func() {
-        err := arpScan("eno1", response) // replace with your interface name
-        if err != nil {
-        }
-    }()
-    for r := range response {
-        log.Println(r)
-    }
+func DoScan(interfaceName string, response chan db.Address) {
+    _ = arpScan(interfaceName, response)
+    // TODO add error channel to return errors to parent 
 }
 

@@ -3,12 +3,11 @@ package main
 import (
     "log"
     "os"
-    "time"
     "gorm.io/gorm"
     "graphite/publisher/db"
     "graphite/publisher/scanner"
-    "graphite/publisher/supervisor"
     "graphite/publisher/utils"
+    "graphite/publisher/cookiefinder"
     //"github.com/nats-io/nats.go"
 )
 
@@ -25,8 +24,9 @@ func logPrefix(prefix string) *log.Logger {
 }
 
 func main() {
-    if true{
-        scanner.DoScan()
+    if false{
+        r := make(chan db.Address, 100)
+        scanner.DoScan("eno1", r)
     } else {
         log.SetOutput(os.Stdout)
         log.SetFlags(log.LstdFlags | log.Lshortfile) // Timestamp + file:line
@@ -53,25 +53,14 @@ func run(conn *gorm.DB, jobCh chan utils.Job[*gorm.DB]) {
     logger := logPrefix("run")
     logger.Println("beginning run loop")
 
-    // testing supervisor implementation
-    cfg := supervisor.SupervisorConfig{
-        Strategy: supervisor.Backoff,
-        Timeout:  25 * time.Second,
-        Backoff: []supervisor.BackoffEntry{
-            {Delay: 2 * time.Second, MaxTries: 3},
-            {Delay: 5 * time.Second, MaxTries: 2},
-        },
-    }
-    runtime := supervisor.NewSupervisor(cfg)
-
     databaseJobQ := utils.NewJobExecutor(conn, jobCh)
     go databaseJobQ.Run()
 
-    scanner := scanner.NewScanner(jobCh)
+    scanner := scanner.NewScanner(20, jobCh)
+    go scanner.Run()
 
-    runtime.Supervise(scanner)
-    go runtime.Run()
-    // testing supervisor implementation
+    cookiefinder := cookiefinder.NewCookieFinder(10, jobCh)
+    go cookiefinder.Run()
 
     logger.Println("running ...")
     select {} // block forever

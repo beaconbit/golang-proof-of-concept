@@ -1,0 +1,424 @@
+main:main 2025/08/06 03:53:08 main.go:35: starting app
+main:main 2025/08/06 03:53:08 main.go:38: Running migrations...
+db:RunMigrations 2025/08/06 03:53:08 migrate.go:15: starting migrations
+main:main 2025/08/06 03:53:08 main.go:41: Connecting to database...
+db:NewSession 2025/08/06 03:53:08 session.go:11: Creating new sqlite session
+main:run 2025/08/06 03:53:08 main.go:54: beginning run loop
+main:run 2025/08/06 03:53:08 main.go:65: running ...
+2025/08/06 03:53:08 cookiefinder.go:24: cookie finder started
+scanner:Start 2025/08/06 03:53:08 scanner.go:29: Scanner started
+2025/08/06 03:53:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:53:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:53:28 scanner.go:48: scanning network
+2025/08/06 03:53:28 doscan.go:44: arp scan running ...
+2025/08/06 03:53:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:53:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:53:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:53:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:53:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:53:48 scanner.go:48: scanning network
+2025/08/06 03:53:48 doscan.go:44: arp scan running ...
+2025/08/06 03:53:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:53:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:53:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:53:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:53:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:54:08 scanner.go:48: scanning network
+2025/08/06 03:54:08 doscan.go:44: arp scan running ...
+2025/08/06 03:54:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:54:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:54:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:54:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:54:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:54:28 scanner.go:48: scanning network
+2025/08/06 03:54:28 doscan.go:44: arp scan running ...
+2025/08/06 03:54:28 cookiefinder.go:41: response from database received: all addresses 52
+2025/08/06 03:54:28 cookiefinder.go:55: response from database received: all devices 0
+scanner:handleUpdate 2025/08/06 03:54:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:54:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:54:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:54:48 scanner.go:48: scanning network
+2025/08/06 03:54:48 doscan.go:44: arp scan running ...
+2025/08/06 03:54:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:54:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:54:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:54:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:54:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:55:08 scanner.go:48: scanning network
+2025/08/06 03:55:08 doscan.go:44: arp scan running ...
+2025/08/06 03:55:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:55:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:55:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:55:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:55:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:55:28 scanner.go:48: scanning network
+2025/08/06 03:55:28 doscan.go:44: arp scan running ...
+2025/08/06 03:55:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:55:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:55:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:55:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:55:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:55:48 scanner.go:48: scanning network
+2025/08/06 03:55:48 doscan.go:44: arp scan running ...
+2025/08/06 03:55:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:55:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:55:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:55:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:55:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:56:08 scanner.go:48: scanning network
+2025/08/06 03:56:08 doscan.go:44: arp scan running ...
+2025/08/06 03:56:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:56:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:56:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:56:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:56:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:56:28 scanner.go:48: scanning network
+2025/08/06 03:56:28 doscan.go:44: arp scan running ...
+2025/08/06 03:56:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:56:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:56:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:56:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:56:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:56:48 scanner.go:48: scanning network
+2025/08/06 03:56:48 doscan.go:44: arp scan running ...
+2025/08/06 03:56:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:56:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:56:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:56:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:56:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:57:08 scanner.go:48: scanning network
+2025/08/06 03:57:08 doscan.go:44: arp scan running ...
+2025/08/06 03:57:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:57:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:57:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:57:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:57:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:57:28 scanner.go:48: scanning network
+2025/08/06 03:57:28 doscan.go:44: arp scan running ...
+2025/08/06 03:57:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:57:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:57:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:57:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:57:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:57:48 scanner.go:48: scanning network
+2025/08/06 03:57:48 doscan.go:44: arp scan running ...
+2025/08/06 03:57:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:57:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:57:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:57:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:57:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:58:08 scanner.go:48: scanning network
+2025/08/06 03:58:08 doscan.go:44: arp scan running ...
+2025/08/06 03:58:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:58:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:58:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:58:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:58:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:58:28 scanner.go:48: scanning network
+2025/08/06 03:58:28 doscan.go:44: arp scan running ...
+2025/08/06 03:58:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:58:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:58:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:58:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:58:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:58:48 scanner.go:48: scanning network
+2025/08/06 03:58:48 doscan.go:44: arp scan running ...
+2025/08/06 03:58:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:58:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:58:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:58:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:58:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:59:08 scanner.go:48: scanning network
+2025/08/06 03:59:08 doscan.go:44: arp scan running ...
+2025/08/06 03:59:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:59:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:59:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:59:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:59:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:59:28 scanner.go:48: scanning network
+2025/08/06 03:59:28 doscan.go:44: arp scan running ...
+2025/08/06 03:59:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:59:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 03:59:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:59:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:59:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 03:59:48 scanner.go:48: scanning network
+2025/08/06 03:59:48 doscan.go:44: arp scan running ...
+2025/08/06 03:59:48 cookiefinder.go:41: response from database received: all addresses 52
+2025/08/06 03:59:48 cookiefinder.go:55: response from database received: all devices 0
+scanner:handleUpdate 2025/08/06 03:59:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 03:59:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 03:59:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:00:08 scanner.go:48: scanning network
+2025/08/06 04:00:08 doscan.go:44: arp scan running ...
+2025/08/06 04:00:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:00:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:00:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:00:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:00:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:00:28 scanner.go:48: scanning network
+2025/08/06 04:00:28 doscan.go:44: arp scan running ...
+2025/08/06 04:00:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:00:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:00:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:00:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:00:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:00:48 scanner.go:48: scanning network
+2025/08/06 04:00:48 doscan.go:44: arp scan running ...
+2025/08/06 04:00:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:00:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:00:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:00:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:00:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:01:08 scanner.go:48: scanning network
+2025/08/06 04:01:08 doscan.go:44: arp scan running ...
+2025/08/06 04:01:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:01:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:01:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:01:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:01:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:01:28 scanner.go:48: scanning network
+2025/08/06 04:01:28 doscan.go:44: arp scan running ...
+2025/08/06 04:01:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:01:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:01:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:01:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:01:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:01:48 scanner.go:48: scanning network
+2025/08/06 04:01:48 doscan.go:44: arp scan running ...
+2025/08/06 04:01:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:01:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:01:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:01:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:01:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:02:08 scanner.go:48: scanning network
+2025/08/06 04:02:08 doscan.go:44: arp scan running ...
+2025/08/06 04:02:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:02:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:02:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:02:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:02:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:02:28 scanner.go:48: scanning network
+2025/08/06 04:02:28 doscan.go:44: arp scan running ...
+2025/08/06 04:02:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:02:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:02:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:02:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:02:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:02:48 scanner.go:48: scanning network
+2025/08/06 04:02:48 doscan.go:44: arp scan running ...
+2025/08/06 04:02:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:02:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:02:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:02:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:02:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:03:08 scanner.go:48: scanning network
+2025/08/06 04:03:08 doscan.go:44: arp scan running ...
+2025/08/06 04:03:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:03:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:03:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:03:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:03:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:03:28 scanner.go:48: scanning network
+2025/08/06 04:03:28 doscan.go:44: arp scan running ...
+2025/08/06 04:03:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:03:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:03:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:03:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:03:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:03:48 scanner.go:48: scanning network
+2025/08/06 04:03:48 doscan.go:44: arp scan running ...
+2025/08/06 04:03:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:03:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:03:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:03:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:03:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:04:08 scanner.go:48: scanning network
+2025/08/06 04:04:08 doscan.go:44: arp scan running ...
+2025/08/06 04:04:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:04:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:04:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:04:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:04:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:04:28 scanner.go:48: scanning network
+2025/08/06 04:04:28 doscan.go:44: arp scan running ...
+2025/08/06 04:04:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:04:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:04:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:04:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:04:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:04:48 scanner.go:48: scanning network
+2025/08/06 04:04:48 doscan.go:44: arp scan running ...
+2025/08/06 04:04:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:04:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:04:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:04:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:04:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:05:08 scanner.go:48: scanning network
+2025/08/06 04:05:08 doscan.go:44: arp scan running ...
+2025/08/06 04:05:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:05:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:05:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:05:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:05:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:05:28 scanner.go:48: scanning network
+2025/08/06 04:05:28 doscan.go:44: arp scan running ...
+2025/08/06 04:05:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:05:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:05:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:05:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:05:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:05:48 scanner.go:48: scanning network
+2025/08/06 04:05:48 doscan.go:44: arp scan running ...
+2025/08/06 04:05:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:05:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:05:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:05:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:05:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:06:08 scanner.go:48: scanning network
+2025/08/06 04:06:08 doscan.go:44: arp scan running ...
+2025/08/06 04:06:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:06:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:06:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:06:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:06:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:06:28 scanner.go:48: scanning network
+2025/08/06 04:06:28 doscan.go:44: arp scan running ...
+2025/08/06 04:06:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:06:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:06:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:06:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:06:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:06:48 scanner.go:48: scanning network
+2025/08/06 04:06:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:06:48 doscan.go:44: arp scan running ...
+2025/08/06 04:06:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:06:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:06:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:06:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:07:08 scanner.go:48: scanning network
+2025/08/06 04:07:08 doscan.go:44: arp scan running ...
+2025/08/06 04:07:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:07:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:07:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:07:18 cookiefinder.go:41: response from database received: all addresses 52
+2025/08/06 04:07:18 cookiefinder.go:55: response from database received: all devices 0
+scanner:scanNetwork 2025/08/06 04:07:28 scanner.go:48: scanning network
+2025/08/06 04:07:28 doscan.go:44: arp scan running ...
+2025/08/06 04:07:28 cookiefinder.go:41: response from database received: all addresses 52
+2025/08/06 04:07:28 cookiefinder.go:55: response from database received: all devices 0
+scanner:handleUpdate 2025/08/06 04:07:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:07:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:07:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:07:48 scanner.go:48: scanning network
+2025/08/06 04:07:48 doscan.go:44: arp scan running ...
+2025/08/06 04:07:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:07:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:07:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:07:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:07:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:08:08 scanner.go:48: scanning network
+2025/08/06 04:08:08 doscan.go:44: arp scan running ...
+2025/08/06 04:08:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:08:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:08:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:08:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:08:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:08:28 scanner.go:48: scanning network
+2025/08/06 04:08:28 doscan.go:44: arp scan running ...
+2025/08/06 04:08:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:08:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:08:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:08:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:08:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:08:48 scanner.go:48: scanning network
+2025/08/06 04:08:48 doscan.go:44: arp scan running ...
+2025/08/06 04:08:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:08:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:08:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:08:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:08:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:09:08 scanner.go:48: scanning network
+2025/08/06 04:09:08 doscan.go:44: arp scan running ...
+2025/08/06 04:09:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:09:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:09:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:09:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:09:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:09:28 scanner.go:48: scanning network
+2025/08/06 04:09:28 doscan.go:44: arp scan running ...
+2025/08/06 04:09:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:09:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:09:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:09:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:09:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:09:48 scanner.go:48: scanning network
+2025/08/06 04:09:48 doscan.go:44: arp scan running ...
+2025/08/06 04:09:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:09:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:09:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:09:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:09:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:10:08 scanner.go:48: scanning network
+2025/08/06 04:10:08 doscan.go:44: arp scan running ...
+2025/08/06 04:10:08 cookiefinder.go:41: response from database received: all addresses 52
+2025/08/06 04:10:08 cookiefinder.go:55: response from database received: all devices 0
+scanner:handleUpdate 2025/08/06 04:10:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:10:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:10:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:10:28 scanner.go:48: scanning network
+2025/08/06 04:10:28 doscan.go:44: arp scan running ...
+2025/08/06 04:10:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:10:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:10:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:10:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:10:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:10:48 scanner.go:48: scanning network
+2025/08/06 04:10:48 doscan.go:44: arp scan running ...
+2025/08/06 04:10:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:10:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:10:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:10:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:10:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:11:08 scanner.go:48: scanning network
+2025/08/06 04:11:08 doscan.go:44: arp scan running ...
+2025/08/06 04:11:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:11:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:11:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:11:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:11:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:11:28 scanner.go:48: scanning network
+2025/08/06 04:11:28 doscan.go:44: arp scan running ...
+2025/08/06 04:11:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:11:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:11:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:11:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:11:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:11:48 scanner.go:48: scanning network
+2025/08/06 04:11:48 doscan.go:44: arp scan running ...
+2025/08/06 04:11:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:11:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:11:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:11:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:11:58 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:12:08 scanner.go:48: scanning network
+2025/08/06 04:12:08 doscan.go:44: arp scan running ...
+2025/08/06 04:12:08 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:12:08 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:12:13 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:12:18 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:12:18 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:12:28 scanner.go:48: scanning network
+2025/08/06 04:12:28 doscan.go:44: arp scan running ...
+2025/08/06 04:12:28 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:12:28 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:12:33 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:12:38 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:12:38 cookiefinder.go:41: response from database received: all addresses 52
+scanner:scanNetwork 2025/08/06 04:12:48 scanner.go:48: scanning network
+2025/08/06 04:12:48 doscan.go:44: arp scan running ...
+2025/08/06 04:12:48 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:12:48 cookiefinder.go:41: response from database received: all addresses 52
+scanner:handleUpdate 2025/08/06 04:12:53 scanner.go:76: bulk upsert succeeded
+2025/08/06 04:12:58 cookiefinder.go:55: response from database received: all devices 0
+2025/08/06 04:12:58 cookiefinder.go:41: response from database received: all addresses 52

@@ -98,3 +98,32 @@ func ReadAddressByIP(ip string) (func(*gorm.DB), <-chan Address, <-chan error) {
     return job, resultCh, errCh
 }
 
+// Read All Devices
+func ReadAllDevices() (func(*gorm.DB), <-chan []Device, <-chan error) {
+    resultCh := make(chan []Device, 1)
+    errCh := make(chan error, 1)
+    job := func(db *gorm.DB) {
+        var devices []Device
+        result := db.Find(&devices)
+        if result.Error != nil {
+            errCh <- result.Error
+        } else {
+            resultCh <- devices
+        }
+    }
+    return job, resultCh, errCh
+}
+
+func AddDevice(device Device) (func(*gorm.DB), <-chan struct{}, <-chan error) {
+    resultCh := make(chan struct{}, 1)
+    errCh := make(chan error, 1)
+    success := struct{}{}
+    job := func(db *gorm.DB) {
+    	if err := db.Create(&device).Error; err != nil {
+            errCh <- err
+	} else {
+            resultCh <- success
+        }
+    }
+    return job, resultCh, errCh
+}
